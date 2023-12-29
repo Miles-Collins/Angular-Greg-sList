@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-3 car" *ngFor="let car of cars">
+      <img class="car-image" [src]="car.imgUrl" alt="" srcset="">
+      <div class="car-description">
+        <p>
+          {{car.color}} {{car.year}} {{car.make}} {{car.model}}
+        </p>
+        <div>
+          <p>
+            ${{car.price}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
